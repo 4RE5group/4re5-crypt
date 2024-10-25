@@ -84,7 +84,7 @@ namespace crypt4re5 {
         // std::string copy = outputHash;
         
 
-        std::cout << outputHash << std::endl;
+        //std::cout << outputHash << std::endl;
 
         strcpy(output, outputHash);
         // output = outputHash;
