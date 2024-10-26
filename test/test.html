@@ -1,0 +1,17 @@
+<p>output: '<p id="output"></p>'</p>
+
+<label>text</label>
+<input id="text" maxlength="512"></input>
+
+<label>salt (keep empty for no salt)</label>
+<input id="salt" maxlength="16"></input>
+<button onclick="clicked()">CLICK</button>
+
+<script src="./4re5-crypt.js"></script>
+<script>
+function clicked() {
+    let result = "";
+    crypt4re5.crypt(result, document.getElementById("text").innerText, document.getElementById("salt").innerText);
+    document.getElementById("output").innerText = result;
+}
+</script>
