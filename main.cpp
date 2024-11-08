@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
     printf("        ░░░░░  ░░░░░      ░░░░░░   ░░░░░░░░      ░░░░░░  ░░░░░       ░░░░░███  ░███░░░     ░░░░░  \n");
     printf("                                                                     ███ ░███  ░███               \n");
     printf("           2024 4re5 group - https://4re5group.github.io             ░░██████   █████              \n");
-    printf("                                                                     ░░░░░░   ░░░░░               \n");
+    printf("           v1.01                                                       ░░░░░░   ░░░░░               \n");
     printf("\n");
 
     // Check for input arguments
@@ -80,7 +80,7 @@ int main(int argc, char* argv[]) {
         printf("-----------------------------------------------------------\n");
 
         char char1, char2;
-        int running = 1;
+        bool running = true;
         while (running) {
             for (int i = 0; i < strlen(text) - 1; i += 2) {
                 char1 = text[i];
@@ -98,11 +98,11 @@ int main(int argc, char* argv[]) {
 
                 // Append the new character to the outputHash
                 size_t len = strlen(outputHash);
-                if (len < OUTPUT_SIZE - 1) {
+                if (len <= OUTPUT_SIZE - 1) {
                     outputHash[len] = newChar;
                     outputHash[len + 1] = '\0';
                 } else {
-                    running = 0;
+                    running = false;
                     break;
                 }
             }
