@@ -55,7 +55,7 @@ namespace crypt4re5 {
             saltInt = getSalt(text); // Use text as salt if salt is empty or not provided
         }
         char char1, char2;
-        int running = 1;
+        bool running = true;
         while (running) {
             for (int i = 0; i < strlen(text) - 1; i += 2) {
                 char1 = text[i];
@@ -74,7 +74,7 @@ namespace crypt4re5 {
                     outputHash[len] = newChar;
                     outputHash[len + 1] = '\0';
                 } else {
-                    running = 0;
+                    running = false;
                     break;
                 }
             }
