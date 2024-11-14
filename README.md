@@ -14,4 +14,4 @@ then see [Usage](#Usage)
 
 ## Usage
 `./4re5-crypt <text> <salt>`  or `./4re5-crypt <text>` to use text as salt 
-for exemple `./4re5-crypt "Hello World!" "mySalt"` will return `Dr,fA+Jx2lG1P~8r#7VD>x)=\JD~/Cb&JD`
+for exemple `./4re5-crypt "Hello World!" "mySalt"` will return `@n(b}'Ft.hC-Lz4nI3R@:t%9XF@z+?^"`
